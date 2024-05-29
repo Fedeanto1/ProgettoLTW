@@ -17,7 +17,7 @@ h1 {
     color: #333;
     font-size: 2vw;
     line-height: 2vw;
-    font-weight: 800;
+    font-weight: 600;
     margin:2%;
     margin-top:0%;
 }
@@ -66,6 +66,11 @@ textarea:hover {
 input[type="file"] {
     margin-bottom: 10px;
 }
+
+.immagine{
+    width:100px;
+    height:70px;
+}
 button {
     display: block;
     width: 100%;
@@ -111,5 +116,18 @@ button:hover {
 @media (max-width:673px){
     .marginesx{
         margin-left:0px;
+    }
+}
+
+@media (max-width:426px){
+    input[type="text"], textarea, input[type="date"], input[type="number"], input[type="file"]{
+        font-size: 1.5vw;
+    }
+    .immagine{
+        height: 50px;
+        width: 80px;
+    }
+    button{
+        font-size: 1.5vw;
     }
 }
