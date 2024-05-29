@@ -99,7 +99,7 @@ $row = mysqli_fetch_assoc($result);
             echo "<span style=\"width:50%;\">";
             echo "<label for=\"file-upload-$i\">Foto $i:</label>";
             if ($row[$foto] != null) {
-                echo "<img src=\"" . $row[$foto] . "\" style=\"width:100px;height:100px;\"><br>";
+                echo "<img src=\"" . $row[$foto] . "\" class=\"immagine\"><br>";
             }
             echo "<input type=\"file\" id=\"file-upload-$i\" name=\"$foto\"><br>";
             echo "</span>";
