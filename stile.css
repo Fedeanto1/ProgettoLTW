@@ -255,7 +255,7 @@ a:hover{
 .MuseRover {
   font-size: 2vw;
   /*line-height: 2.5rem;*/
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
   color: #ffffff;
   z-index: 2;
@@ -369,6 +369,11 @@ a:hover{
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
   font-size: 1vw;
   background-color: white;
+}
+
+.contenuto-nuovo{
+  display: flex; 
+  height: fit-content;
 }
 
 .containerattrazioni{
@@ -973,6 +978,13 @@ input{
   height: 5vw;
  }
 
+ .nome-utente{
+  font-size: 2vw; 
+  color:white; 
+  display:flex;
+  align-items: center;
+ }
+
  .Testo {
   font-size: 1.1vw;
   line-height: 2rem;
@@ -1096,10 +1108,52 @@ input{
   .popup{
     bottom: 25px;
   }
+  .edit-button{
+    width:auto;
+    height: 3vw;
+  }
+  .delete-button{
+    width:auto;
+    height:3vw;
+  }
 
-  @media(min-width:1440px){
-    .att-cost{
-      margin-top:1px;
-    }
+  .contenuto-nuovo{
+    flex-direction: column;
+    font-size:2vw;
+  }
+  .finestrasx{
+    width:98%;
+    margin-right: 1%;
+    
+  }
+  .più{
+    display: flex;
+    width:2vw;
+    font-size:2vw;
+    justify-content: center;
+  }
+  
+  .infondo{
+    height: 50px;
+  }
+
+  .invio-nuovo{
+    width: 50px;
+    font-size: 2vw;
+    height: 25px;
+  }
+
+
+}
+
+@media(min-width:1440px){
+  .att-cost{
+    margin-top:1px;
+  }
+}
+
+@media(max-width:768px){
+  .più{
+    height: 2.5vw;
   }
 }
