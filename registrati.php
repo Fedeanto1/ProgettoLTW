@@ -8,8 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body style="background-color:#f0f0f0;">
-    <div class="centered">
+<body style="background-color:#f0f0f0; display: flex; flex-direction: column;">
+    <div class="pannello pannello4">
+        <img src="logo.png" class="immagine-personalizzata">
+        <span class="MuseRover" style="padding-left: 2vw; color: #000000; font-size: 1.5vw">Muse Rover</span></div>
+    <div class="centered" style="padding-top: 5vw;">
         <form  method="post" action="registra.php" name="registrati" id="registrati" class="form" style="height: auto;" onsubmit="handleRegistrationSuccess();">
             <div>
                 <a class="material-symbols-outlined" style="color:#34568b;" href="./Index.html">home</a> 
