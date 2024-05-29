@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <title>Cambia Password</title>
     <link rel="stylesheet" href="./stile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 </head>
 <body style="display: flex; flex-direction: column;">
     <div class="pannello pannello4">
         <img src="logo.png" class="immagine-personalizzata">
-        <span class="MuseRover" style="padding-left: 2vw;">Muse Rover</span></div>
+        <span class="MuseRover" style="padding-left: 2vw; color: #000000">Muse Rover</span></div>
     <div class="contenuto-entrypage" style="display: grid; grid-template-columns: repeat(2, 0fr); gap: 3vw; place-content: center; background-color: #f0f0f0; height: 80vh;">
     <form action="change_password.php" method="post" class="form">
         <div class="form-title" style="padding-bottom: 0rem; font-size: 110%; text-align: center;">
