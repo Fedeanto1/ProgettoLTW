@@ -1012,8 +1012,8 @@ input{
 .popup {
   border-radius: 0.5rem;;
   position: absolute;
-  bottom: 8%;
-  right: 2%;
+  bottom: 4.4vw;
+  right: 4%;
   background-color: white;
   border: 1px solid #34568b;
   padding: 1vw;
@@ -1092,5 +1092,14 @@ input{
   .foto-index{
     height:8vw;
     width:18vw;
+  }
+  .popup{
+    bottom: 25px;
+  }
+
+  @media(min-width:1440px){
+    .att-cost{
+      margin-top:1px;
+    }
   }
 }
