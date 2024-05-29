@@ -157,8 +157,7 @@ a:hover{
 .form-title {
   font-size: 1.7vw;
   line-height: 100%;
-  font-weight: bold;
-  font-family: "Comfortaa", cursive;
+  font-weight: 400;
   position: relative;
   color: #2a1800;
   z-index: 2;
@@ -256,13 +255,10 @@ a:hover{
 .MuseRover {
   font-size: 2vw;
   /*line-height: 2.5rem;*/
-  font-weight: 900;
-  font-family: "Comfortaa", cursive;
+  font-weight: 500;
   position: relative;
   color: #ffffff;
   z-index: 2;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
 
 .searchbar {
@@ -934,6 +930,14 @@ input{
   place-content: center;
   padding-top: 0vw;
   padding-bottom: 0%;
+}
+.pannello4 {
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  height: 10vw;
+  width: 100vw;
+  padding: 0%;
 }
 
 .polaroid{
