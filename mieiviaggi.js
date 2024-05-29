@@ -73,7 +73,7 @@ document.getElementById('person-icon').addEventListener('click', function() {
     popup.classList.add('popup');
 
     var option1 = document.createElement('a');
-    option1.href = 'modifica_profilo.html'; 
+    option1.href = 'modifica_profilo.php'; 
     option1.textContent = 'Modifica Profilo';
     option1.style.display = 'block';
 
