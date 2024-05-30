@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body style="background-color:#f0f0f0;">
+<body >
     <div id="success-banner" class="banner">
         <span>Registrazione effettuata con successo</span>
         <button id="close-banner" onclick="chiudibanner()" style="display:flex; align-content:center;"><span class="material-symbols-outlined" style="color:white;">
@@ -27,20 +27,20 @@
             <div id="error-message" class="error-message"style=" margin-top: 0.5vw; color:red; font-size:1.2vw;"><?php echo $_GET['error']; ?></div>
             <?php } ?>
             <div class="input-container">
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="email" id="email" name="email" placeholder="Email" style="max-width: 250px" required >
             </div>
             <div class="input-container">
-            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="password" name="password" placeholder="Password" style="max-width: 250px" required>
             </div>
             <div class="center">
-            <button type="submit" class="submit" > Login </button>
+            <button type="submit" class="submit" > Accedi </button>
             </div>
             <div class="signup-link">
-                <a href="">Forgot Password?</a>
+                <a href="recupera_password.php">Password Dimenticata?</a>
             </div>
             <div class="signup-link">
-                Don't have an account?
-                <a href="registrati.php">Sign up</a>
+                Non hai un account?
+                <a href="registrati.php">Registrati</a>
             </div>
         </form>
     </div>   
