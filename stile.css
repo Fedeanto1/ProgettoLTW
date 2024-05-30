@@ -31,6 +31,16 @@ a:hover{
   justify-content:space-between;
 }
 
+.nuova-att-cost{
+  margin-right: 0%; 
+  display: flex; 
+  height:2vw; 
+  justify-content:space-between;
+  width: 90%; 
+  align-items:center; 
+  font-size:1vw;
+}
+
 .barra-superiore {
   background-color: #34568b;
   color: #fff;
@@ -1025,11 +1035,11 @@ input{
   border-radius: 0.5rem;;
   position: absolute;
   bottom: 4.4vw;
-  right: 4%;
+  right: 5%;
   background-color: white;
   border: 1px solid #34568b;
   padding: 1vw;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 
 @media (min-width: 1440px){
@@ -1107,6 +1117,7 @@ input{
   }
   .popup{
     bottom: 25px;
+    font-size:2vw;
   }
   .edit-button{
     width:auto;
@@ -1143,11 +1154,16 @@ input{
     height: 25px;
   }
 
+  .nuova-att-cost{
+    font-size: 2vw;
+    margin-top: 2px;
+  }
+
 
 }
 
 @media(min-width:1440px){
-  .att-cost{
+  .nuova-att-cost{
     margin-top:1px;
   }
 }
