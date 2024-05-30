@@ -241,8 +241,23 @@ a:hover{
   box-shadow: 0 1px 2px 0 #0000000d;
   transition: 0.2s;
   width: 50vw;
-  max-width: 250px;
   height: 2.5vh;
+  max-width: 260px;
+}
+
+.input, select {
+  background-color: #fff;
+  padding-right: 2rem;
+  padding-left: 0.7rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.5rem;
+  border-color: #c0c0c0;
+  box-shadow: 0 1px 2px 0 #8a8a8a0d;
+  transition: 0.2s;
+  height: 7.5vh;
+  width: 97%;
+  color: #747474;
 }
 
 .input-container input:hover,
