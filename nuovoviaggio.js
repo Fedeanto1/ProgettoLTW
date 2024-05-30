@@ -6,9 +6,9 @@ $(document).ready(function() {
             document.getElementById("per").style.display="block";
         }
         console.log(counter);
-        var nuovattrazione='<div id="insieme" class="att-cost" style="width: 90%; margin-right: 0%; display: flex; height:2vw; justify-content:space-between; align-items:center; font-size:1vw;">'+
+        var nuovattrazione='<div id="insieme" class="nuova-att-cost">'+
                             '<span style="width:70%;">'+'<label for="visita'+counter+'" style="margin-right:1%;">Da visitare</label>'+'<input type="text" id="visita'+counter+'" name="visita'+counter+'" style="width: 70%; font-size:1vw;">'+'</span>'+
-                            '<span style="width:30%;">'+'<label for="prezzo'+counter+'" style="margin-right:4px;">Costo (€)</label>'+'<input type="number" id="prezzo'+counter+'" name="prezzo'+counter+'" min="0" style="width:40%; font-size:1vw;">'+'</span>'+
+                            '<span style="width:30%;">'+'<label for="prezzo'+counter+'" style="margin-right:3%;">Costo (€)</label>'+'<input type="number" id="prezzo'+counter+'" name="prezzo'+counter+'" min="0" style="width:40%;font-size:1vw;">'+'</span>'+
                             '</div>';
         
             $("#conteinerattrazioni").append(nuovattrazione);
