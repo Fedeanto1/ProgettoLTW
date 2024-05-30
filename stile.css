@@ -1178,8 +1178,26 @@ input{
     height: 6vw;
     width:9vw;
   }
+  select{
+    width:83%;
+    margin-top:8px;
+    margin-bottom:8px;
+  }
 
 
+}
+
+@media(max-width: 376px){
+  select{
+    width:75%;
+
+  }
+}
+
+@media (max-width: 320px){
+  select{
+    width:73%;
+  }
 }
 
 @media(min-width:1440px){
@@ -1199,7 +1217,3 @@ input{
     height: 2.5vw;
   }
 }
-
-
-
-
