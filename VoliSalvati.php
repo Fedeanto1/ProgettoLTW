@@ -9,7 +9,7 @@ if(!isset($_SESSION['userid'])) {
 
 $userId = $_SESSION['userid'];
 
-// Ottieni i preferiti dell'utente
+//Preferiti dell'utente
 $preferiti_query = "SELECT viaggio FROM preferiti WHERE utente = ?";
 $stmt = $conn->prepare($preferiti_query);
 $stmt->bind_param("i", $userId);
@@ -82,7 +82,7 @@ while ($row = $preferiti_result->fetch_assoc()) {
             $query = "SELECT * FROM viaggio v LEFT JOIN utenti u ON v.autore=u.id WHERE destinazione LIKE '%$destinazione%' ORDER BY v.id_viaggio DESC";
             $result = mysqli_query($conn, $query);
         }else {
-                $query="SELECT * FROM preferiti p JOIN (SELECT * FROM viaggio v LEFT JOIN utenti u on v.autore=u.id ORDER BY v.id_viaggio DESC) s ON p.viaggio=s.id_viaggio WHERE p.utente LIKE '%$userId%'ORDER BY v.id_viaggio DESC ";
+                $query="SELECT * FROM preferiti p JOIN (SELECT * FROM viaggio v JOIN utenti u on v.autore=u.id ORDER BY v.id_viaggio DESC) s ON p.viaggio=s.id_viaggio WHERE p.utente = '$userId'ORDER BY v.id_viaggio DESC ";
                 $result = mysqli_query($conn, $query);
             }
 
@@ -218,8 +218,8 @@ while ($row = $preferiti_result->fetch_assoc()) {
             </span>
         </div>
         <div class="icona">
-            <span class="material-symbols-outlined" style="font-size:2vw;">
-                <a href="logout.php" style="text-decoration: none; color:white;">person</a>
+            <span id="person-icon" class="material-symbols-outlined" style="font-size:2vw;text-decoration: none; color:white;">
+                person
             </span>
         </div>
     </footer>
