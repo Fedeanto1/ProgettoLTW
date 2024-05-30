@@ -473,8 +473,8 @@ justify-content: center;
 
 
 .custum-file-upload {
-  height: 10vw;
-    width: 15vw;
+  height: 8vw;
+    width: 12vw;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -496,7 +496,7 @@ justify-content: center;
 }
 
 .custum-file-upload .icon-foto svg {
-  height: 4vw;
+  height: 3vw;
   fill: rgba(75, 85, 99, 1);
 }
 
@@ -1159,6 +1159,10 @@ input{
     font-size: 2vw;
     margin-top: 2px;
   }
+  .custum-file-upload{
+    height: 6vw;
+    width:9vw;
+  }
 
 
 }
@@ -1167,6 +1171,12 @@ input{
   .nuova-att-cost{
     margin-top:1px;
   }
+  #slideshow{
+    height:150px;
+  }
+  .conteiner-nuovo{
+    margin-bottom: 6.5vw;
+  }
 }
 
 @media(max-width:768px){
@@ -1174,3 +1184,7 @@ input{
     height: 2.5vw;
   }
 }
+
+
+
+
